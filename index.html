@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>오늘의 선택</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .card-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      width: calc(25% - 15px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 1rem;
+      margin: 0 0 10px;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>오늘의 선택</h1>
+    <div class="card-row">
+      <div class="card">
+        <img src="a.jpg" alt="책 커버 A">
+        <div class="card-content">
+          <h3>책 제목 A</h3>
+          <p>책 설명 A</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="b.jpg" alt="책 커버 B">
+        <div class="card-content">
+          <h3>책 제목 B</h3>
+          <p>책 설명 B</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="c.jpg" alt="책 커버 C">
+        <div class="card-content">
+          <h3>책 제목 C</h3>
+          <p>책 설명 C</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="d.jpg" alt="책 커버 D">
+        <div class="card-content">
+          <h3>책 제목 D</h3>
+          <p>책 설명 D</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
